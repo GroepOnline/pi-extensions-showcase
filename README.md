@@ -29,7 +29,7 @@ tmux attach -t pi-ext-film
 npx remotion studio --no-open --port=3000
 ```
 
-Open `/LiveTerminal`. Title-card scenes stay in the `Title cards (not the hero)` folder.
+Open `/LiveTerminal`. Title-card scenes stay in the `title-cards` folder.
 
 ## Notes
 

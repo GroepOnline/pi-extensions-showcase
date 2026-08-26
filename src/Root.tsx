@@ -36,7 +36,7 @@ export const RemotionRoot: React.FC = () => {
         width={liveWidth}
         height={liveHeight}
       />
-      <Folder name="Title cards (not the hero)">
+      <Folder name="title-cards">
         <Composition
           id="PiExtensionsFilm"
           component={PiExtensionsFilm}
