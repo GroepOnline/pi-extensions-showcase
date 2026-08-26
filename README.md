@@ -1,54 +1,26 @@
-# Remotion video
+# Pi extensions showcase
 
-<p align="center">
-  <a href="https://github.com/remotion-dev/logo">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://github.com/remotion-dev/logo/raw/main/animated-logo-banner-dark.apng">
-      <img alt="Animated Remotion Logo" src="https://github.com/remotion-dev/logo/raw/main/animated-logo-banner-light.gif">
-    </picture>
-  </a>
-</p>
+Remotion film for GroepOnline’s own Pi packages.
 
-Welcome to your Remotion project!
+Composition `PiExtensionsFilm` — 1920×1080, 30 fps, about 63 seconds.
 
-## Commands
+| Scene | Package |
+| --- | --- |
+| Wishcraft | `@groeponline/pi-wishcraft` |
+| Orchestrator | `@groeponline/pi-agent-orchestrator` |
+| Tools | `@groeponline/pi-tools` |
+| Missions | `@groeponline/pi-missions` |
+| Control | `GroepOnline/pi-agent-control-extension` |
 
-**Install Dependencies**
+## Studio
 
-```console
-npm i
+```bash
+tmux attach -t pi-ext-film
+npx remotion studio --no-open
 ```
 
-**Start Preview**
+Open the printed URL, then `/PiExtensionsFilm`.
 
-```console
-npm run dev
-```
+## Notes
 
-**Render video**
-
-```console
-npx remotion render
-```
-
-**Upgrade Remotion**
-
-```console
-npx remotion upgrade
-```
-
-## Docs
-
-Get started with Remotion by reading the [fundamentals page](https://www.remotion.dev/docs/the-fundamentals).
-
-## Help
-
-We provide help on our [Discord server](https://discord.gg/6VzzNDwUwV).
-
-## Issues
-
-Found an issue with Remotion? [File an issue here](https://github.com/remotion-dev/remotion/issues/new).
-
-## License
-
-Note that for some entities a company license is needed. [Read the terms here](https://github.com/remotion-dev/remotion/blob/main/LICENSE.md).
+Signaal tokens: warm paper `#F7F6F5`, one blue `#317CFF`, Instrument Serif + General Sans + IBM Plex Mono. No Inter, no gradients, no card farm.
