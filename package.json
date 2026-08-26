@@ -9,6 +9,7 @@
     "@remotion/cli": "4.0.517",
     "@remotion/fonts": "4.0.517",
     "@remotion/google-fonts": "4.0.517",
+    "@remotion/media": "4.0.517",
     "@remotion/tailwind-v4": "4.0.517",
     "@remotion/transitions": "4.0.517",
     "react": "19.2.3",
@@ -28,7 +29,9 @@
     "dev": "remotion studio",
     "build": "remotion bundle",
     "upgrade": "remotion upgrade",
-    "lint": "eslint src && tsc"
+    "lint": "eslint src && tsc",
+    "record:live": "bash scripts/record-live.sh",
+    "render:live": "remotion render LiveTerminal out/live-terminal-hero.mp4"
   },
   "sideEffects": [
     "*.css"

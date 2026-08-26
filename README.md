@@ -1,26 +1,36 @@
 # Pi extensions showcase
 
-Remotion film for GroepOnline’s own Pi packages.
+Hero is a **live Pi TUI recording**, not title cards.
 
-Composition `PiExtensionsFilm` — 1920×1080, 30 fps, about 63 seconds.
+Composition `LiveTerminal` — 1920×1080, 30 fps, H.264 `yuv420p`, about 63 seconds. Source: `public/live-terminal.mp4`, captured with asciinema inside tmux, rendered with `agg` + ffmpeg.
 
-| Scene | Package |
-| --- | --- |
-| Wishcraft | `@groeponline/pi-wishcraft` |
-| Orchestrator | `@groeponline/pi-agent-orchestrator` |
-| Tools | `@groeponline/pi-tools` |
-| Missions | `@groeponline/pi-missions` |
-| Control | `GroepOnline/pi-agent-control-extension` |
+| Beat | Package | Command |
+| --- | --- | --- |
+| Signal / Deck | `@groeponline/pi-wishcraft` | `/wishcraft` (bare `/signal` toggles the UI off) |
+| Skills | `@groeponline/pi-wishcraft` | `/skills` |
+| Agents | `@groeponline/pi-agent-orchestrator` | `/agents` |
+| Missions | `@groeponline/pi-missions` | `/mission status` |
+
+`fffind` / `ffgrep` (`@groeponline/pi-tools`) are agent tools, not slash commands, so they stay off this tape.
+
+## Record again
+
+```bash
+tmux attach -t pi-ext-rec   # optional: watch the take
+npm run record:live
+```
+
+That script starts Pi inside tmux, drives the beats, and writes `public/live-terminal.mp4`. Then update `liveDurationFrames` in `src/LiveTerminal.tsx` from `ffprobe` duration × 30.
 
 ## Studio
 
 ```bash
 tmux attach -t pi-ext-film
-npx remotion studio --no-open
+npx remotion studio --no-open --port=3000
 ```
 
-Open the printed URL, then `/PiExtensionsFilm`.
+Open `/LiveTerminal`. Title-card scenes stay in the `Title cards (not the hero)` folder.
 
 ## Notes
 
-Signaal tokens: warm paper `#F7F6F5`, one blue `#317CFF`, Instrument Serif + General Sans + IBM Plex Mono. No Inter, no gradients, no card farm.
+Do not sell synthetic cards as the hero. Keep Pi chrome in frame (prompt, model, powerline). Isolated recordings use `--no-session --offline --approve`.
