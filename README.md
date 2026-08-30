@@ -17,7 +17,7 @@ Delivery master: `public/pi-extensions-mimo-showcase.mp4`.
 
 ## Which package do I need?
 
-The packages are layers, not six competing task managers. Start with the narrowest layer that owns your problem.
+The packages are layers, not competing task managers. Start with the narrowest layer that owns your problem.
 
 | If you need... | Install | Owns |
 | --- | --- | --- |
@@ -32,7 +32,7 @@ The packages are layers, not six competing task managers. Start with the narrowe
 For work that grows in scope, the intended promotion path is:
 
 ```text
-Wishcraft idea -> Missions mission -> Orchestrator run -> Control / evidence verification
+Wishcraft idea -> Missions mission -> Orchestrator run -> @groeponline/pi-control verification -> @groeponline/pi-agent-control-extension evidence
 ```
 
 ### Portfolio privacy contract
