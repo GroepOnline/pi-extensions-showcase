@@ -15,6 +15,30 @@ Delivery master: `public/pi-extensions-mimo-showcase.mp4`.
 | Orchestrator hub | `@groeponline/pi-agent-orchestrator` | `/agents` |
 | Missions | `@groeponline/pi-missions` | scaffold + `/mission dashboard` (Xiaomi MiMo partnership showcase, F001–F003) |
 
+## Which package do I need?
+
+The packages are layers, not six competing task managers. Start with the narrowest layer that owns your problem.
+
+| If you need... | Install | Owns |
+| --- | --- | --- |
+| A Pi operator cockpit, status UI, skills, and a quick idea inbox | [`@groeponline/pi-wishcraft`](https://github.com/GroepOnline/pi-wishcraft) | Operator UX + short-lived ideas |
+| Work that must survive restarts/compaction with plan, queue, evidence, and recovery | [`@groeponline/pi-missions`](https://github.com/GroepOnline/pi-missions) | Durable work state |
+| Parallel/isolated subagents, worktrees, swarms, schedules, and handoffs | [`@groeponline/pi-agent-orchestrator`](https://github.com/GroepOnline/pi-agent-orchestrator) | Execution fabric |
+| Fast local fuzzy path/content search and `@` completion | [`@groeponline/pi-tools`](https://github.com/GroepOnline/pi-tools) | Search primitive |
+| Z.AI cache/thinking/usage diagnostics on Pi's native provider | [`@groeponline/pi-zai`](https://github.com/GroepOnline/pi-zai) | Provider observability |
+| Pi session/model/tool/state control and assertions | [`@groeponline/pi-control`](https://github.com/GroepOnline/pi-control) | Runtime control + verification |
+| Browser/terminal capture, QA evidence, Skill Studio, and showcase proof | [`@groeponline/pi-agent-control-extension`](https://github.com/GroepOnline/pi-agent-control-extension) | Evidence/capture control |
+
+For work that grows in scope, the intended promotion path is:
+
+```text
+Wishcraft idea -> Missions mission -> Orchestrator run -> Control / evidence verification
+```
+
+### Portfolio privacy contract
+
+The shared default is **no remote telemetry unless explicitly enabled** and no required ChefGroep-hosted control plane. Some optional features deliberately cross the network boundary (for example provider APIs, Wishcraft DeepWiki/exchange-rate helpers, explicitly configured PostHog telemetry, or remote capture bridges). Each package must document those boundaries where they occur rather than hiding them behind a blanket "local-only" claim.
+
 ## Record again
 
 ```bash
