@@ -25,6 +25,7 @@ The packages are layers, not competing task managers. Start with the narrowest l
 | Work that must survive restarts/compaction with plan, queue, evidence, and recovery | [`@groeponline/pi-missions`](https://github.com/GroepOnline/pi-missions) | Durable work state |
 | Parallel/isolated subagents, worktrees, swarms, schedules, and handoffs | [`@groeponline/pi-agent-orchestrator`](https://github.com/GroepOnline/pi-agent-orchestrator) | Execution fabric |
 | Fast local fuzzy path/content search and `@` completion | [`@groeponline/pi-tools`](https://github.com/GroepOnline/pi-tools) | Search primitive |
+| Guidance for composing `rg`, `fzf`, `jq`, `awk`, `sed`, `grep`, `find`, and `xargs` inside Pi | [`@groeponline/pi-cli-search-tools`](https://github.com/GroepOnline/pi-cli-search-tools) | CLI search/filter skill |
 | Z.AI cache/thinking/usage diagnostics on Pi's native provider | [`@groeponline/pi-zai`](https://github.com/GroepOnline/pi-zai) | Provider observability |
 | Pi session/model/tool/state control and assertions | [`@groeponline/pi-control`](https://github.com/GroepOnline/pi-control) | Runtime control + verification |
 | Browser/terminal capture, QA evidence, Skill Studio, and showcase proof | [`@groeponline/pi-agent-control-extension`](https://github.com/GroepOnline/pi-agent-control-extension) | Evidence/capture control |
