@@ -22,7 +22,9 @@
     "@types/react": "19.2.7",
     "@types/web": "0.0.166",
     "eslint": "9.19.0",
-    "prettier": "3.8.1",
+    "husky": "^9.1.7",
+    "lint-staged": "^17.6.1",
+    "prettier": "^3.8.1",
     "typescript": "5.9.3"
   },
   "overrides": {
@@ -34,7 +36,8 @@
     "upgrade": "remotion upgrade",
     "lint": "eslint src && tsc",
     "record:live": "bash scripts/record-live.sh",
-    "render:live": "remotion render LiveTerminal out/live-terminal-hero.mp4"
+    "render:live": "remotion render LiveTerminal out/live-terminal-hero.mp4",
+    "prepare": "husky"
   },
   "sideEffects": [
     "*.css"
